@@ -1,0 +1,10 @@
+[project]
+name = "car-rental"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "fastapi[all]>=0.142.2",
+    "uvicorn>=0.54.0",
+]
