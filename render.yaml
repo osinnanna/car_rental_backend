@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: fastcars-car-rental-api
+    runtime: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python main.py
+    envVars:
+      - key: DATABASE_URL
+        value: sqlite:///./database.db
+      - key: API_PREFIX
+        value: /api
+      - key: DEBUG
+        value: "false"
+      - key: ALLOWED_ORIGINS
+        value: "*"

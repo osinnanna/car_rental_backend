@@ -8,6 +8,8 @@ class Settings(BaseSettings):
     DATABASE_URL: str
     API_PREFIX: str = "/api"
     DEBUG: bool = False
+    SECRET_KEY: str = "fastcars-super-secure-secret-key-2026"
+    ACCESS_TOKEN_EXPIRE_MINUTES: int = 60 * 24 * 7  # 7 days
     ALLOWED_ORIGINS: str = ""
 
     @field_validator("ALLOWED_ORIGINS")

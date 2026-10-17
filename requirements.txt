@@ -1,0 +1,5 @@
+fastapi[all]>=0.142.2
+python-dotenv>=1.2.4
+sqlalchemy>=2.1.2
+uvicorn>=0.54.0
+pydantic-settings>=2.15.0
